@@ -1,0 +1,10 @@
+.storage
+.tmp
+*.log
+bin
+dist
+neutralino.js
+node_modules
+*.tsbuildinfo
+server
+server.exe

@@ -1,0 +1,55 @@
+{
+  "applicationId": "neutralinojs.vite.react.ts.reader",
+  "cli": {
+    "binaryName": "reader",
+    "binaryVersion": "5.5.0",
+    "clientVersion": "5.4.0",
+    "distributionPath": "/dist/",
+    "extensionsPath": "/extensions/",
+    "frontendLibrary": {
+      "buildCommand": "bun run build",
+      "devCommand": "bun run dev",
+      "devUrl": "http://localhost:4200",
+      "initCommand": "bun install",
+      "patchFile": "/web/index.html",
+      "projectPath": "/web/"
+    },
+    "resourcesPath": "/web/dist/"
+  },
+  "defaultMode": "window",
+  "documentRoot": "/web/dist/",
+  "enableNativeAPI": true,
+  "enableServer": true,
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "modes": {
+    "window": {
+      "borderless": false,
+      "center": true,
+      "enableInspector": true,
+      "exitProcessOnClose": false,
+      "hidden": true,
+      "icon": "/web/public/icon.png",
+      "maximize": false,
+      "minHeight": 400,
+      "minWidth": 700,
+      "resizable": true,
+      "title": "Manim Offline Reader",
+      "useSavedState": false
+    }
+  },
+  "nativeAllowList": [
+    "app.*",
+    "computer.*",
+    "events.*",
+    "filesystem.*",
+    "os.*",
+    "window.*"
+  ],
+  "singlePageServe": true,
+  "tokenSecurity": "none",
+  "url": "/",
+  "version": "1.0.0"
+}
