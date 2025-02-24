@@ -1,0 +1,17 @@
+services:
+  mbook-frontend:
+    build: https://github.com/ru3bix/manimbook-editor.git
+    environment:
+      - BASE_URL=http://mbook-runner:8080
+      - AI_KEY=<an openai compatible api key>
+    ports:
+      - 3000:3000
+
+  mbook-runner:
+    build: https://github.com/ru3bix/manimbook-runner.git
+    ports:
+      - 8080:8080
+    environment:
+      - BASE_DIR=/app
+      - PUBLIC_HTTP_URL=http://127.0.0.1:8080
+      - PUBLIC_WS_URL=ws://127.0.0.1:8080
