@@ -25,6 +25,13 @@ Instructions to use individual services/software along with their architecture a
 
 You can locally deploy the entire editor stack using docker compose. An example configuration is provided [here](compose.yaml).
 
+### Instructions
+
+Download the `compose.yaml` in an empty folder or copy it from below
+
+```
+wget -O compose.yaml https://raw.githubusercontent.com/ru3bix/fosshack25/refs/heads/main/compose.yaml
+```
 ```yaml
 services:
   mbook-frontend:
@@ -43,6 +50,11 @@ services:
       - BASE_DIR=/app
       - PUBLIC_HTTP_URL=http://127.0.0.1:8080
       - PUBLIC_WS_URL=ws://127.0.0.1:8080
+```
+
+Edit the environment variables. Make sure to add an OpenAI compatible API key. You can get one by self-hosting [OpenLLM](https://github.com/bentoml/OpenLLM). Start the service with
+```
+docker compose up -d
 ```
 
 > [!IMPORTANT]
