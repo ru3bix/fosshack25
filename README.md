@@ -48,7 +48,7 @@ services:
 > [!IMPORTANT]
 > Keep in mind that the AI helper will require an OpenAI compatible API key to work.
 
-> [!WARNING]
+> [!CAUTION]
 > **DO NOT** use this to host your own service for public to access. Currently the project is in **VERY** early stages and the entire runner service is just one big RCE vulnerability.
 
 To save the trouble, we have hosted the editor and runner service at [https://manimbook.kush.in/ide](https://manimbook.kush.in/ide?welcome=true) and [https://mbook-runner.kush.in](https://mbook-runner.kush.in) respectively.
