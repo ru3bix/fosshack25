@@ -4,6 +4,3 @@
 [submodule "backend"]
 	path = backend
 	url = git@github.com:ru3bix/manimbook-runner
-[submodule "reader"]
-	path = reader
-	url = git@github.com:ru3bix/manimbook-reader.git
